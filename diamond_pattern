@@ -1,0 +1,30 @@
+def Shape_of_Diamond(shape):
+a = 0
+for m in range(1, shape + 1):
+
+for n in range(1, (shape - m) + 1):
+print(end=" ")
+
+while a != (2 * m - 1):
+print("@", end="")
+a = a + 1
+a = 0
+
+print()
+
+s = 1
+c = 1
+for m in range(1, shape):
+
+for n in range(1, s + 1):
+print(end=" ")
+s = s + 1
+
+while c <= (2 * (shape - m) - 1):
+print("@", end="")
+c = c + 1
+c= 1
+print()
+
+shape = 8
+Shape_of_Diamond(shape)
